@@ -1,0 +1,259 @@
+#todo {
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(230,29,43,255);
+    display: flex;
+    justify-content: center;
+        align-items: center;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    /*overflow-x: hidden; */
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    /* font-family: sans-serif; per rendere il font in grassetto in questo caso*/
+}
+
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: rgb(255, 255, 255)fff;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+}
+
+#logo img {
+    width: 150px;
+    /*margin: 30px; */
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+
+#menu,
+#social {
+    align-items: center;
+}
+
+#menu ul {
+    flex-direction: row;
+    font-size: 15px;
+    gap:5px;
+    padding-top:10px;
+
+}
+
+#social ul {
+    gap: 22px;
+}
+
+#menu ul li {
+    border-bottom: 4px solid transparent;
+    transition: all ease .3s;
+}
+
+#menu ul li:hover {
+    border-bottom: 4px solid red;
+}
+
+#social li {
+    display: flex;
+    align-items: center;
+}
+
+#social li svg {
+    width: 28px;
+    fill: white;
+}
+
+#social li:hover svg :is(path, circle) {
+
+    fill: #F00;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 200px;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    
+}
+
+footer #social {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    padding-top: 20px;
+
+}
+
+#logo-footer {
+    display: flex;
+    fill: white;
+    
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#logo-footer a {
+width: 150px;
+
+}
+
+
+@media screen and (min-width: 769px) {
+
+    
+    #todo {
+        font-size: 25px;
+        font-weight: 900;
+        color: rgba(230,29,43,255);
+        display: flex;
+        justify-content: center;
+            align-items: center;
+    }
+    
+
+    main {
+        flex-direction: row;
+    }
+
+    #sidebar {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        width: 40%;
+    }
+    header {
+        background-color: rgb(255, 255, 255)fff;
+        flex: none;
+        justify-content: left;
+        padding-top: 15px;
+        flex-direction: row;
+    
+    }
+
+    #logo {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        width: 15%;
+
+    }
+
+    #logo img {
+        width: 150px;
+        /*margin: 30px; */
+        padding: 13px;
+    }
+
+    #menu,
+    #social {
+        align-items: center;
+
+    }
+
+    #menu ul {
+        flex-direction: row;
+        gap: 50px;
+        font-size: 18px;
+
+    }
+
+    #social ul {
+        gap: 22px;
+    }
+
+    #menu ul li {
+        border-bottom: 4px solid transparent;
+        transition: all ease .3s;
+    }
+
+    #menu ul li:hover {
+        border-bottom: 4px solid red;
+    }
+
+    #social li {
+        display: flex;
+        align-items: center;
+    }
+
+    #social li svg {
+        width: 28px;
+        fill: white;
+    }
+
+    #social li:hover svg :is(path, circle) {
+        fill: #F00;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+    }
+
+    footer #social {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 80px;
+        /*padding-top: 15px;*/
+        align-items: center;
+
+    }
+
+    #logo-footer {
+        display: flex;
+        fill: white;
+        justify-content: start;
+        align-items: center;
+        padding-top: 20px;
+    }
+    
+    #logo-footer a {
+    width: 150px;
+    padding: 13px;
+    }
+
+
+        
+    }
+
