@@ -4,8 +4,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
-    /*overflow-x: hidden; */
-}
+ }
 
 ul {
     padding-left: 0;
@@ -126,9 +125,8 @@ header {
 }
 
 .container {
-    
-     display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -451,10 +449,6 @@ width: 150px;
     padding: 13px;
     }
 
-    footer #about {
-        flex-direction: column;
-        padding-left: 13px;
-        
-    }
+   
 
 }
